@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Mitra Pendamping Halal - Melayani Seluruh Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(126, 34, 206, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at top right, #f5f3ff, #ffffff); }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(126, 34, 206, 0.1), 0 10px 10px -5px rgba(126, 34, 206, 0.04); }
+    </style>
+</head>
+<body class="bg-[#FAFBFF] text-slate-900 relative">
+
+    <nav class="glass-nav fixed w-full z-[100]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 bg-purple-700 rounded-xl flex items-center justify-center shadow-lg shadow-purple-200">
+                        <span class="text-white font-extrabold text-xl">H</span>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-extrabold leading-none text-purple-950 uppercase tracking-wider">Mitra Halal</h1>
+                        <p class="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em]">Pendampingan PPH Resmi</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#edukasi" class="text-sm font-semibold text-slate-600 hover:text-purple-700 transition">Regulasi</a>
+                    <a href="#manfaat" class="text-sm font-semibold text-slate-600 hover:text-purple-700 transition">Keunggulan</a>
+                    <a href="#skema" class="bg-purple-700 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-purple-800 transition shadow-md shadow-purple-100">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient pt-40 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 bg-purple-50 border border-purple-100 px-4 py-2 rounded-full mb-6">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-600"></span>
+                    </span>
+                    <span class="text-xs font-bold text-purple-700 uppercase tracking-widest">Pendaftaran Terbuka</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-[1.1] mb-6">
+                    Sertifikasi Halal Lebih <span class="text-purple-700">Mudah & Terpercaya</span>
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-xl">
+                    Portal resmi pendampingan UMKM untuk mendapatkan sertifikat halal BPJPH. Kami membantu dari verifikasi bahan hingga terbitnya sertifikat.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#skema" class="px-8 py-4 bg-purple-700 text-white rounded-2xl font-bold hover:bg-purple-800 transition shadow-xl shadow-purple-200">Cek Skema Sertifikasi</a>
+                    <a href="https://wa.me/6280000000000" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-2xl font-bold hover:bg-slate-50 transition">Konsultasi Gratis</a>
+                </div>
+            </div>
+            <div class="hidden lg:block relative">
+                <div class="absolute inset-0 bg-purple-200 blur-[100px] opacity-30 rounded-full"></div>
+                <div class="relative bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100">
+                    <div class="flex items-center gap-4 mb-6 pb-6 border-b border-slate-100">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold italic text-xl">✓</div>
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-tighter">Status Pendampingan</p>
+                            <p class="font-bold text-slate-800">100+ UMKM Tersertifikasi</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden"><div class="w-full h-full bg-purple-600"></div></div>
+                        <p class="text-sm font-medium text-slate-500">Proses Cepat & Terintegrasi SiHalal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="edukasi" class="py-16 px-6 max-w-7xl mx-auto border-t border-slate-100">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Pahami Regulasi Halal BPJPH</h3>
+            <p class="text-slate-500 font-medium">Informasi penting terkait kewajiban sertifikasi halal bagi pelaku usaha.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 card-hover">
+                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-3 leading-tight">Usaha Wajib Halal</h4>
+                <p class="text-sm text-slate-500 mb-4">Berdasarkan UU No. 33 Tahun 2014 & Peraturan BPJPH, produk berikut wajib bersertifikat:</p>
+                <ul class="text-sm text-slate-600 space-y-2">
+                    <li class="flex gap-2"><span class="text-blue-500 font-bold">•</span> Produk Makanan & Minuman</li>
+                    <li class="flex gap-2"><span class="text-blue-500 font-bold">•</span> Bahan Baku & Tambahan Pangan</li>
+                    <li class="flex gap-2"><span class="text-blue-500 font-bold">•</span> Jasa Penyembelihan & Hasil Sembelihan</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-slate-200 card-hover">
+                <div class="w-12 h-12 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-3 leading-tight">Keuntungan Sertifikasi</h4>
+                <p class="text-sm text-slate-500 mb-4">Mengapa bisnis Anda sangat butuh label halal?</p>
+                <ul class="text-sm text-slate-600 space-y-2">
+                    <li class="flex gap-2"><span class="text-green-500 font-bold">•</span> Meningkatkan kepercayaan & ketenangan konsumen muslim</li>
+                    <li class="flex gap-2"><span class="text-green-500 font-bold">•</span> Syarat masuk ke Supermarket & Retail modern</li>
+                    <li class="flex gap-2"><span class="text-green-500 font-bold">•</span> Nilai tambah (Unique Selling Point) dibanding kompetitor</li>
+                </ul>
+            </div>
+
+            <div class="bg-red-50 p-8 rounded-3xl border border-red-100 card-hover">
+                <div class="w-12 h-12 bg-white text-red-600 rounded-2xl flex items-center justify-center mb-6 shadow-sm">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                </div>
+                <h4 class="font-bold text-red-900 mb-3 leading-tight">Dampak Jika Tidak Punya</h4>
+                <p class="text-sm text-red-800/80 mb-4">Sanksi tegas menanti produk yang belum bersertifikat sesuai batas penahapan:</p>
+                <ul class="text-sm text-red-800 font-medium space-y-2">
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">•</span> Peringatan tertulis dari pemerintah</li>
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">•</span> Penarikan barang dari peredaran pasar</li>
+                    <li class="flex gap-2"><span class="text-red-500 font-bold">•</span> Denda administratif hingga penutupan izin usaha</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="manfaat" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Kenapa Bermitra Dengan Kami?</h3>
+            <p class="text-slate-500 font-medium">Layanan profesional dengan jangkauan nasional.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
+                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-3 leading-tight">Konsultasi Fleksibel</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Kami melayani pendampingan pendaftaran sertifikasi Halal <strong>via Whatsapp</strong> secara online.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
+                <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-3 leading-tight">Proses Kilat</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Input data ke sistem SiHalal dibantu sepenuhnya agar menghindari revisi berulang dari komite fatwa.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover">
+                <div class="w-12 h-12 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h4 class="font-bold text-slate-900 mb-3 leading-tight">Jaminan Legalitas</h4>
+                <p class="text-sm text-slate-500 leading-relaxed">Pendampingan sesuai regulasi UU No. 33 Tahun 2014 untuk memastikan produk Anda aman di pasaran.</p>
+            </div>
+            <div id="cakupan" class="bg-purple-700 p-8 rounded-3xl text-white shadow-xl shadow-purple-200">
+                <h4 class="font-bold mb-3 leading-tight">Wilayah Layanan</h4>
+                <p class="text-sm text-purple-100 mb-6">Kami menjangkau seluruh pelaku usaha di:</p>
+                <ul class="space-y-3 text-xs font-bold uppercase tracking-widest">
+                    <li class="flex items-center gap-2 text-white"><div class="w-1.5 h-1.5 bg-white rounded-full"></div> Jawa Tengah</li>
+                    <li class="flex items-center gap-2 text-purple-200"><div class="w-1.5 h-1.5 bg-purple-300 rounded-full opacity-50"></div> Jawa Timur & Barat</li>
+                    <li class="flex items-center gap-2 text-purple-200"><div class="w-1.5 h-1.5 bg-purple-300 rounded-full opacity-50"></div> Sekitarnya</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skema" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Pilih Skema Sertifikasi Halal</h3>
+                <p class="text-slate-500 font-medium">Klik salah satu skema untuk mengisi formulir pendaftaran.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                
+                <div class="bg-white rounded-[2rem] p-8 border border-slate-200 card-hover">
+                    <div class="mb-6 flex justify-between items-start">
+                        <div class="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center text-slate-600">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                        </div>
+                        <span class="bg-slate-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Kuota Terbatas Pemerintah</span>
+                    </div>
+                    <h5 class="text-xl font-bold text-slate-900 mb-6">Self-Declare (SEHATI)</h5>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Gratis 100% (Tanpa Biaya)</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Khusus Produk Risiko Rendah</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Maksimal 10 Menu/Produk</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Pendampingan via Aplikasi</li>
+                    </ul>
+                    <button onclick="pilihSkema('Self-Declare (SEHATI)')" class="w-full py-4 border-2 border-slate-200 text-slate-700 rounded-2xl font-bold hover:border-purple-600 hover:text-purple-600 transition">Cek Kuota Gratis</button>
+                </div>
+
+                <div class="bg-white rounded-[2rem] p-8 border-2 border-purple-700 card-hover shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-600 text-white px-6 py-2 rounded-bl-2xl text-[10px] font-bold uppercase tracking-widest">Paling Banyak Dipilih</div>
+                    <div class="mb-6">
+                        <div class="w-14 h-14 bg-purple-700 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-purple-200">
+                            <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.381z" clip-rule="evenodd"></path></svg>
+                        </div>
+                    </div>
+                    <h5 class="text-xl font-bold text-purple-900 mb-6">Self Declare Mandiri</h5>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex gap-3 text-sm font-bold text-slate-900"><span class="text-green-500 font-bold">✓</span> Pendampingan Intensif 1-on-1</li>
+                        <li class="flex gap-3 text-sm font-bold text-slate-900"><span class="text-green-500 font-bold">✓</span> Input Data & NIB Dibantu Penuh</li>
+                        <li class="flex gap-3 text-sm font-bold text-slate-900"><span class="text-green-500 font-bold">✓</span> Penyusunan Manual SJPH</li>
+                        <li class="flex gap-3 text-sm font-bold text-slate-900"><span class="text-green-500 font-bold">✓</span> Verifikasi Bahan Baku Mendalam</li>
+                        <li class="flex gap-3 text-sm font-bold text-slate-900"><span class="text-green-500 font-bold">✓</span> Monitoring Hingga Selesai</li>
+                    </ul>
+                    <button onclick="pilihSkema('Self Declare Mandiri')" class="w-full py-4 bg-purple-700 text-white rounded-2xl font-bold hover:bg-purple-800 transition shadow-lg shadow-purple-200">Daftar Skema Mandiri</button>
+                </div>
+
+                <div class="bg-white rounded-[2rem] p-8 border border-slate-200 card-hover">
+                    <div class="mb-6 flex justify-between items-start">
+                        <div class="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center text-slate-600">
+                           <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <span class="bg-gray-800 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Industri & Resto Besar</span>
+                    </div>
+                    <h5 class="text-xl font-bold text-slate-900 mb-6">Skema Reguler</h5>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Untuk Cafe, Resto, Katering & Dapur SPPG</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Jasa Penyembelihan (RPU-RPH)</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Audit oleh LPH Profesional</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Pendampingan Pra-Audit</li>
+                        <li class="flex gap-3 text-sm font-medium text-slate-600"><span class="text-green-500 font-bold">✓</span> Konsultasi Teknis Bahan Kompleks</li>
+                    </ul>
+                    <button onclick="pilihSkema('Skema Reguler')" class="w-full py-4 border-2 border-slate-200 text-slate-700 rounded-2xl font-bold hover:border-purple-600 hover:text-purple-600 transition">Konsultasi Biaya</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section" class="py-24 px-6 bg-white">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-5 gap-12">
+            <div class="md:col-span-2">
+                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Formulir Pendaftaran</h3>
+                <p class="text-slate-500 text-sm leading-relaxed mb-8">Silakan lengkapi data profil usaha Anda. Tim kami akan segera menghubungi melalui WhatsApp untuk proses selanjutnya.</p>
+                
+                <div class="p-6 bg-purple-50 rounded-3xl border border-purple-100">
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="profil.jpeg" class="w-12 h-12 rounded-full border-2 border-white shadow-sm">
+                        <div>
+                            <p class="text-sm font-extrabold text-slate-900">Mega Mikasari</p>
+                            <p class="text-[10px] font-bold text-purple-700 uppercase">Pendamping & Penyelia Halal</p>
+                        </div>
+                    </div>
+                    <p class="text-[11px] text-slate-500 italic mb-5">"“Membersamai Pelaku Usaha Menuju Bisnis yang Halal, Legal, dan Berkembang.”"</p>
+
+                    <div class="flex flex-col gap-2.5">
+                        <button type="button" onclick="bukaModal('Sertifikat P3H', 'https://drive.google.com/file/d/1iN2TJvaXFyQKDgkFGYaHYIZz3kgAfna5/preview')" class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-purple-700 text-white rounded-xl text-[10px] font-bold uppercase tracking-wider hover:bg-purple-800 transition shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Cek Sertifikat P3H
+                        </button>
+                        <button type="button" onclick="bukaModal('Sertifikat Penyelia Halal', 'https://drive.google.com/file/d/1iEgc3_bpdjWe8sNDv4s2-5dFeIZYPnoB/preview')" class="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-purple-700 border border-purple-200 rounded-xl text-[10px] font-bold uppercase tracking-wider hover:bg-purple-50 transition shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Cek Sertifikat Penyelia Halal
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:col-span-3">
+                <form onsubmit="kirimKeWA(event)" class="grid sm:grid-cols-2 gap-4">
+                    <div class="sm:col-span-2">
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">Pilih Skema</label>
+                        <select id="form-skema" required class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition font-bold text-slate-700">
+                            <option value="">-- Klik Salah Satu Kartu Di Atas --</option>
+                            <option value="Self-Declare (SEHATI)">Self-Declare (SEHATI) - Gratis</option>
+                            <option value="Self Declare Mandiri">Self Declare Mandiri - Pendampingan Penuh</option>
+                            <option value="Skema Reguler">Skema Reguler - Skala Industri</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">Nama Pemilik</label>
+                        <input type="text" id="form-nama" required class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">Nama Usaha</label>
+                        <input type="text" id="form-usaha" required class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">Jenis Produk</label>
+                        <input type="text" id="form-produk" required class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition">
+                    </div>
+                    <div>
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">Kota/Kabupaten</label>
+                        <input type="text" id="form-kota" required class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">No WhatsApp</label>
+                        <input type="number" id="form-wa" required class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition">
+                    </div>
+                    
+                    <div class="sm:col-span-2">
+                        <label class="text-[10px] font-bold text-slate-400 uppercase tracking-widest ml-1 mb-2 block">Pesan Tambahan (Opsional)</label>
+                        <textarea id="form-pesan" rows="3" placeholder="Tuliskan pertanyaan atau detail khusus usaha Anda di sini..." class="w-full px-5 py-4 bg-slate-50 border-2 border-transparent focus:border-purple-700 focus:bg-white outline-none rounded-2xl transition resize-none"></textarea>
+                    </div>
+
+                    <div class="sm:col-span-2 pt-4">
+                        <button type="submit" class="w-full py-5 bg-purple-700 text-white rounded-2xl font-extrabold hover:bg-purple-800 transition shadow-xl shadow-purple-200 uppercase tracking-[0.2em] text-xs">Kirim Data via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 py-16 px-6 text-center border-t-4 border-purple-700">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-center gap-3 mb-8 opacity-50 grayscale contrast-200">
+                <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center font-bold">H</div>
+                <span class="text-white font-extrabold">MITRA HALAL INDONESIA</span>
+            </div>
+            <p class="text-slate-500 text-xs font-bold uppercase tracking-[0.3em] leading-loose">
+                Layanan Pendampingan PPH Independen<br>
+                Mendukung UU Jaminan Produk Halal Nasional
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6285126472027" class="fixed bottom-8 right-8 w-16 h-16 bg-purple-700 text-white rounded-2xl shadow-2xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all z-[999] hover:bg-purple-800">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <div id="pdfModal" class="fixed inset-0 z-[9999] hidden bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 transition-opacity opacity-0 pointer-events-none duration-300">
+        <div class="bg-white rounded-3xl w-full max-w-4xl h-[85vh] sm:h-[90vh] flex flex-col shadow-2xl overflow-hidden transform scale-95 transition-transform duration-300 relative">
+            
+            <div class="flex justify-between items-center p-4 sm:px-6 sm:py-4 border-b border-slate-100 bg-white z-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-purple-100 text-purple-700 rounded-lg flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 id="modalTitle" class="font-extrabold text-slate-900 text-sm sm:text-base uppercase tracking-wider">Judul Sertifikat</h3>
+                </div>
+                <button onclick="tutupModal()" class="w-10 h-10 bg-slate-100 hover:bg-red-100 hover:text-red-600 rounded-xl flex items-center justify-center transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <div class="flex-1 bg-slate-100 w-full h-full relative">
+                <iframe id="pdfIframe" src="" class="w-full h-full border-none absolute inset-0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <script></script>
+        function pilihSkema(skema) {
+            document.getElementById('form-skema').value = skema;
+            document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function kirimKeWA(e) {
+            e.preventDefault();
+            const n = document.getElementById('form-nama').value;
+            const u = document.getElementById('form-usaha').value;
+            const p = document.getElementById('form-produk').value;
+            const k = document.getElementById('form-kota').value;
+            const w = document.getElementById('form-wa').value;
+            const s = document.getElementById('form-skema').value;
+            const msg = document.getElementById('form-pesan').value;
+
+            const nomor = "6285126472027"; 
+            
+            let teks = `*FORMULIR PENDAFTARAN HALAL*%0A`;
+            teks += `============================%0A`;
+            teks += `*Skema Pilihan:* ${s}%0A`;
+            teks += `*Nama Pemilik:* ${n}%0A`;
+            teks += `*Nama Usaha:* ${u}%0A`;
+            teks += `*Jenis Produk:* ${p}%0A`;
+            teks += `*Kota/Kabupaten:* ${k}%0A`;
+            teks += `*Nomor WhatsApp:* ${w}%0A`;
+            teks += `============================`;
+            
+            if (msg.trim() !== "") {
+                teks += `%0A*Pesan Tambahan:*%0A_${msg}_%0A============================`;
+            }
+
+            teks += `%0A%0A_Mohon panduan selanjutnya, Kak._`;
+            
+            window.open(`https://wa.me/${nomor}?text=${teks}`, '_blank');
+        }
+
+        const pdfModal = document.getElementById('pdfModal');
+        const pdfModalContent = pdfModal.querySelector('div');
+
+        function bukaModal(judul, urlPdf) {
+            document.getElementById('modalTitle').innerText = judul;
+            document.getElementById('pdfIframe').src = urlPdf;
+            
+            pdfModal.classList.remove('hidden');
+            setTimeout(() => {
+                pdfModal.classList.remove('opacity-0', 'pointer-events-none');
+                pdfModalContent.classList.remove('scale-95');
+                pdfModalContent.classList.add('scale-100');
+            }, 10);
+
+            document.body.style.overflow = 'hidden';
+        }
+
+        function tutupModal() {
+            pdfModal.classList.add('opacity-0', 'pointer-events-none');
+            pdfModalContent.classList.remove('scale-100');
+            pdfModalContent.classList.add('scale-95');
+            
+            setTimeout(() => {
+                pdfModal.classList.add('hidden');
+                document.getElementById('pdfIframe').src = "";
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+    </script>
+</body>
+</html>
