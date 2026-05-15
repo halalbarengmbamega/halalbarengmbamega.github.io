@@ -344,7 +344,7 @@
         </div>
     </div>
 
-    <script></script>
+    <script>
         function pilihSkema(skema) {
             document.getElementById('form-skema').value = skema;
             document.getElementById('form-section').scrollIntoView({ behavior: 'smooth' });
@@ -352,44 +352,44 @@
 
         function kirimKeWA(e) {
             e.preventDefault();
-            const n = document.getElementById('form-nama').value;
-            const u = document.getElementById('form-usaha').value;
-            const p = document.getElementById('form-produk').value;
-            const k = document.getElementById('form-kota').value;
-            const w = document.getElementById('form-wa').value;
-            const s = document.getElementById('form-skema').value;
-            const msg = document.getElementById('form-pesan').value;
+            var n = document.getElementById('form-nama').value;
+            var u = document.getElementById('form-usaha').value;
+            var p = document.getElementById('form-produk').value;
+            var k = document.getElementById('form-kota').value;
+            var w = document.getElementById('form-wa').value;
+            var s = document.getElementById('form-skema').value;
+            var msg = document.getElementById('form-pesan').value;
 
-            const nomor = "6285126472027"; 
+            var nomor = "6285126472027"; 
             
-            let teks = `*FORMULIR PENDAFTARAN HALAL*%0A`;
-            teks += `============================%0A`;
-            teks += `*Skema Pilihan:* ${s}%0A`;
-            teks += `*Nama Pemilik:* ${n}%0A`;
-            teks += `*Nama Usaha:* ${u}%0A`;
-            teks += `*Jenis Produk:* ${p}%0A`;
-            teks += `*Kota/Kabupaten:* ${k}%0A`;
-            teks += `*Nomor WhatsApp:* ${w}%0A`;
-            teks += `============================`;
+            var teks = "*FORMULIR PENDAFTARAN HALAL*%0A";
+            teks += "============================%0A";
+            teks += "*Skema Pilihan:* " + s + "%0A";
+            teks += "*Nama Pemilik:* " + n + "%0A";
+            teks += "*Nama Usaha:* " + u + "%0A";
+            teks += "*Jenis Produk:* " + p + "%0A";
+            teks += "*Kota/Kabupaten:* " + k + "%0A";
+            teks += "*Nomor WhatsApp:* " + w + "%0A";
+            teks += "============================";
             
             if (msg.trim() !== "") {
-                teks += `%0A*Pesan Tambahan:*%0A_${msg}_%0A============================`;
+                teks += "%0A*Pesan Tambahan:*%0A_" + msg + "_%0A============================";
             }
 
-            teks += `%0A%0A_Mohon panduan selanjutnya, Kak._`;
+            teks += "%0A%0A_Mohon panduan selanjutnya, Kak._";
             
-            window.open(`https://wa.me/${nomor}?text=${teks}`, '_blank');
+            window.open("https://wa.me/" + nomor + "?text=" + teks, "_blank");
         }
 
-        const pdfModal = document.getElementById('pdfModal');
-        const pdfModalContent = pdfModal.querySelector('div');
+        var pdfModal = document.getElementById('pdfModal');
+        var pdfModalContent = pdfModal.querySelector('div');
 
         function bukaModal(judul, urlPdf) {
             document.getElementById('modalTitle').innerText = judul;
             document.getElementById('pdfIframe').src = urlPdf;
             
             pdfModal.classList.remove('hidden');
-            setTimeout(() => {
+            setTimeout(function() {
                 pdfModal.classList.remove('opacity-0', 'pointer-events-none');
                 pdfModalContent.classList.remove('scale-95');
                 pdfModalContent.classList.add('scale-100');
@@ -403,10 +403,10 @@
             pdfModalContent.classList.remove('scale-100');
             pdfModalContent.classList.add('scale-95');
             
-            setTimeout(() => {
+            setTimeout(function() {
                 pdfModal.classList.add('hidden');
                 document.getElementById('pdfIframe').src = "";
-                document.body.style.overflow = 'auto';
+                document.body.style.overflow = 'auto'; 
             }, 300);
         }
     </script>
